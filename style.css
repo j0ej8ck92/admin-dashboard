@@ -37,7 +37,12 @@ html body {
     background-color: blueviolet;
     grid-column: 1;
     grid-row: 1 / 7;
+    
 }
+
+/*.sidebar-item {
+    
+}*/
 
 .content-square {
     grid-column: 2 / 6;
@@ -74,6 +79,13 @@ button {
     border-radius: 15px;
     width: 6em;
     height: 2.5em;
+}
+
+.dashboard, .profile , .messages, .history, .tasks
+, .communities, .settings, .support, .privacy {
+    height: 30px;
+    width: 30px;
+    fill: white;
 }
 
 
