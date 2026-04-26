@@ -13,14 +13,12 @@ html body {
     display: grid;
     grid-template-columns: repeat(1, 1fr) repeat(1, 6fr) ;
     grid-template-rows:   repeat(6, 1fr);
-    
 }
 
 .header {
     background-color: white;
     grid-column: 2 / 5;
     grid-row: 1 / 1;
-    
 }
 
 .top-header {
@@ -148,19 +146,14 @@ html body {
     background-color: white;
     border-bottom: 2px solid rgba(77, 26, 124, 0.938);
     box-shadow: 0 8px 6px -6px black;
-     box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  /* clip-path: inset(top right bottom left) */
-  /* Using negative values allows the shadow to show only on bottom (B) and right (R) */
-  clip-path: inset(0 -15px -15px 0); 
-    
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    clip-path: inset(0 -15px -15px 0); 
 }
 
 .column-three {
     display: grid;
     grid-template-columns: repeat(1, minmax(0,1fr));
-    padding:1em;
     row-gap: 2em;
-
 }
 
 
@@ -171,21 +164,38 @@ html body {
     row-gap: 2em;
     background-color: white;
     border-radius: 4px;
-     box-shadow: 0 8px 6px -6px black;
-     
-  /* clip-path: inset(top right bottom left) */
-  /* Using negative values allows the shadow to show only on bottom (B) and right (R) */
-  clip-path: inset(0 -15px -15px 0); 
-    
-    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-top: 1em;
+    padding-left: 2em;
 }
 
 .rectangle-one-third {
     border-bottom: solid black 2px;
     box-shadow:  10px 10px -8px rgba(0, 0, 0, 0.5); 
+}
 
+.rectangle-two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding-left: 2em;
+    padding-right: 15em;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-    
+.description {
+    display: flex; 
+    flex-direction: column;
+    gap: .5em;
+}
+
+.tag-name {
+    font-weight: bold;
 }
 
 .para-column-three {
@@ -216,6 +226,11 @@ p {
     padding-top: .5em;
     padding-right: 5em;
     padding-bottom: 4em;
+    color: rgb(90, 89, 89)
+}
+
+span {
+    color: rgb(90, 89, 89)
 }
 
 .rectangle-icons {
@@ -289,7 +304,6 @@ h1 {
 
 .introduction {
     grid-column: 4 / 11;
-    
 }
 
 button {
