@@ -40,11 +40,19 @@ html body {
     width: 600px;
     border-radius: 35px;
     box-shadow: 0 8px 6px -10px black;
-
+    padding-left: 1em;
+    font-weight: bold;
 }
 
 #search-input:hover {
     background-color: rgba(214, 196, 231, 0.719);
+}
+
+::placeholder {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-left: .75em;
+    color: rgb(48, 47, 47);
 }
 
 .bottom-header {
